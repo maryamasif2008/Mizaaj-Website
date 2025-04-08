@@ -1,0 +1,105 @@
+.navbar {
+    transform: translateY(-100%);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .navbar-show {
+    transform: translateY(0);
+  }
+  
+  .bg-transparent {
+    background-color: transparent !important;
+  }
+
+@keyframes fadeInLeft {
+    0% {
+      opacity: 0;
+      transform: translateX(-50px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  @keyframes fadeInRight {
+    0% {
+      opacity: 0;
+      transform: translateX(50px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  .in-view {
+    animation: fadeInLeft 1s ease-out forwards;
+  }
+  
+  .in-view-right {
+    animation: fadeInRight 1s ease-out forwards;
+  }
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  50% {
+    opacity: 0.5;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+ .fade-in {
+    opacity: 0;
+    animation: fadeIn 1.5s forwards;
+  }
+
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  } 
+
+ @keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animate-fadeInUp {
+    animation: fadeInUp 1.5s ease-in-out forwards;
+}
+
+.animate-slideInUp {
+    animation: slideInUp 1s ease-in-out forwards;
+}
+
+.delay-200 {
+    animation-delay: 0.2s;
+}  
